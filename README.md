@@ -1,9 +1,9 @@
 # lab03
 
 ## What do you think is the type of each of the following fields? 
-* private int count - integer
-* private Student representative - object
-* private Server host - object
+* private int count - int
+* private Student representative - Student
+* private Server host - Server
 
 ## What are the names of the following fields? 
 * private boolean alive - alive
@@ -18,13 +18,13 @@
 private int price;
 ```
 does it matter which order the three words appear in? Edit the TicketMachine class to try different orderings. After each change, close the editor. Does the appearance of the class diagram after each change give you a clue as to whether or not other orderings are possible? Check by pressing the Compile button to see if there is an error message. Make sure that you reinstate the original version after your experiments! 
--The appearance of the code matters as it is being changed.
+-You can't change the order of "private int price".
 
 ## Is it always necessary to have a semicolon at the end of a field declaration? Once again, experiment via the editor. The rule you will learn here is an important one, so be sure to remember it. 
 - Yes, it is always necessary to have a semicolon at the end of a field declaration or else there is no end to whatever you are defining.
 
 ## Write in full the declaration for a field of type `int` whose name is `status`.
-- private int status
+- private int status;
 
 ## To what class does the following constructor belong?
 ```
@@ -57,6 +57,6 @@ public Pet(String petsName)
 ```
 new Date("March", 23, 1861)
 ```
-- public class Date
+- public class Date(String month, int date, int year)
 
 Try to give meaningful names to the parameters.
